@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+    margin: 2rem 0;
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    margin: .5rem 0;
+    background: #CFCFCF;
+    border-radius: 30px;
+    border: 3px solid #CFCFCF;
+}
+
+body::-webkit-scrollbar-track {
+    margin: 0 0;
+    border-radius: 0;
+    border: 0px solid #CFCFCF;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 30px;
+    border: 3px solid #CFCFCF;
+}
+.grecaptcha-badge { visibility: hidden; }
+.navigation-wrapper {
+    position: relative;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-number-input input:focus {
+  outline: none !important;
+}
+
+.custom-number-input button:focus {
+  outline: none !important;
+}
+
+.slider__home {
+    .swiper {
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Old versions of Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+        padding-bottom: 41px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-image: url("../public/icons/blue/ArrowSlider.svg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+            width: 42px;
+
+        }
+
+        .swiper-button-next {
+            transform: rotate(180deg);
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+
+        .swiper-pagination {
+
+            &-bullet {
+                border: none;
+                width: 14px;
+                height: 14px;
+                background: #c5c5c5;
+                border-radius: 50%;
+                margin: 0 5px;
+                padding: 5px;
+                cursor: pointer;
+                transition: ease-in .3s;
+
+                &-active {
+                    width: 55px;
+                    border-radius: 1rem;
+                    background-color: #4579FF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .slider__home {
+        .swiper {
+            padding-bottom: 30px;
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 35px;
+            }
+
+
+            .swiper-pagination {
+                &-bullet {
+                    width: 10px;
+                    height: 10px;
+                    padding: 4px;
+
+                    &-active {
+                        width: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+}

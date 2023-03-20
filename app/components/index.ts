@@ -1,0 +1,11 @@
+export { default as HeaderContainer } from "./Header/header.container";
+export { default as SliderHome } from "./Sliders/sliderHome";
+export { default as Marks } from "./Marks/marks";
+export { default as Marksdest } from "./Marks/marksdest";
+export { default as ProductsOffers } from "./Products/productsOffers";
+export { default as Important } from "./Important/important";
+export { default as Offer } from "./Offer/offer";
+export { default as WhyBoy } from "./whyBuy/whyBoy";
+export { default as FooterContainer } from "./Footer/footer.container";
+export { default as ProductBebe } from "./Products/productBebe";
+export { default as ProductDestacados } from "./Products/productDestacados";
